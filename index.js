@@ -37,6 +37,7 @@ client.connect(err => {
        productscollection.find({})
        .toArray((err, documents)=>{
            res.send(documents);
+           console.log(documents[0])
        })
    })
 
